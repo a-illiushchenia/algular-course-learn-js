@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DescribeComponent implements OnInit {
 
-  public imageSrc: string = '../images/b1.jpg';
+  public imageSrc: string = 'app/images/b1.jpg';
 
   constructor() { }
 
@@ -17,11 +17,11 @@ export class DescribeComponent implements OnInit {
   @Input()
   public setDescribe(hotelId: number): void{
     if(hotelId == 1){
-      this.imageSrc = '../images/b1.jpg';
+      this.imageSrc = 'app/images/b1.jpg';
     }else if(hotelId == 2){
-      this.imageSrc = '../images/b2.jpg';
+      this.imageSrc = 'app/images/b2.jpg';
     }else if(hotelId == 3){
-      this.imageSrc = '../images/b3.jpg';
+      this.imageSrc = 'app/images/b3.jpg';
     }
   }
 
